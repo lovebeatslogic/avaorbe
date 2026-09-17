@@ -55,6 +55,12 @@
       color: #1e2a2a !important;
     }
 
+    .mobile-break { display: none; }
+
+    @media (max-width: 600px) {
+      .mobile-break { display: block; }
+    }
+
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(25px); }
       to { opacity: 1; transform: translateY(0); }
@@ -124,7 +130,7 @@
 
               <div style="padding: 8px 0;">
                 <div class="sib-form-block" style="font-family:Futura, sans-serif; font-size:27px; text-align:left; color:#7aa1a1; background-color:transparent; text-align:left">
-                  <p>I&#39;m writing songs.&nbsp;Want to hear them?</p>
+                  <p>I&#39;m writing songs. <br class="mobile-break">Want to hear them?</p>
                 </div>
               </div>
 
